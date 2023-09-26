@@ -1,3 +1,15 @@
-Holder: Niels Bohr
-Number: 0123 4567 8901 2345
-Expiry: 12/22
+.hardware helloworld
+
+.inputs Reset
+.outputs Oscillator
+
+.latches
+Oscillator -> OscillatorM
+
+.update
+
+Oscillator = !OscillatorM && !Reset
+
+.simulate
+Reset=0000100
+
