@@ -35,7 +35,9 @@ public class main {
 	// and parse anything from the grammar for "start"
 	ParseTree parseTree = parser.start();
 	Interpreter interpreter = new Interpreter();
-	System.out.println(interpreter.visit(parseTree));
+	String result = interpreter.visit(parseTree);
+	System.out.println(result);
+
 	// Build the Abstract Syntax Tree (AST)
 	//ASTMaker astmaker = new ASTMaker();
 	//Program p=(Program)astmaker.visit(parseTree);
