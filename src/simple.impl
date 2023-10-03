@@ -1,0 +1,17 @@
+/* Simple Program in the impl language,
+   an example for a simple imperative language
+*/
+
+b=3; 
+x=5;
+
+result = 1;
+
+// compute result = exp(b,x); 
+
+while(x>0){
+  result=result*b;
+  x=x-1;
+}
+
+output(result); 
