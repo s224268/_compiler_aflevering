@@ -71,12 +71,11 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 	public String visitProg(implParser.ProgContext ctx){
-
-		return ("<html><head><title> " +  + "</title>\n" +
+		return ("<html><head><title> " + ctx.ident.getText() + " </title>\n" +
 				"<script src=\"https://polyfill.io/v3/polyfill.min.js?features=es6\"></script>\n" +
 				"<script type=\"text/javascript\" id=\"MathJax-script\"\n" +
 				"async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\">\n" +
-				"</script></head><body>\n");
+				"</script></head><body>\n <h1>"+ ctx.ident.getText() + "</h1>\n" + visit(ctx.next));
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#inputs}.
@@ -84,11 +83,16 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 	public String visitInputs(implParser.InputsContext ctx){
-		return "OF";
+		return ("<h2> Inputs </h2>\nReset\n\n" + visit(ctx.next));
 	}
 	
 	public String visitOutputs(implParser.OutputsContext ctx){
-		return "CHARS";
+		return ("<h2> Outputs </h2>\n" + visitChildren(ctx)
+		);
+	}
+	public String visitOutput(implParser.OutputContext ctx){
+		System.out.println("VISITING OUTPUT");
+		return (ctx.ident.getText() + "\n b");
 	}
 
 	public String visitLatches(implParser.LatchesContext ctx){
