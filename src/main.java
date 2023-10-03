@@ -123,7 +123,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	public String visitOr(implParser.OrContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return "";
+		return ctx.e1.getText() + "\\vee" + visit(ctx.e2);
 	}
 
 
@@ -135,12 +135,12 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	public String visitParen(implParser.ParenContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return "";
+		return "(" + visit(ctx.e) + ")";
 	}
 
 	public String visitNot(implParser.NotContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return "";
+		return "\\neg" + visit(ctx.e);
 	}
 
 
