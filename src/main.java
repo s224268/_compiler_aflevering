@@ -36,19 +36,19 @@ public class main {
 	ParseTree parseTree = parser.start();
 
 	// Build the Abstract Syntax Tree (AST)
-	ASTMaker astmaker = new ASTMaker();
-	Program p=(Program)astmaker.visit(parseTree);
+	//ASTMaker astmaker = new ASTMaker();
+	//Program p=(Program)astmaker.visit(parseTree);
 
 	// For evaluation, create an empty environment and run eval:
-	Environment env=new Environment();
-	p.eval(env);
+	//Environment env=new Environment();
+	//p.eval(env);
     }
 }
 
 /* Visitor that turns the ANTLR parse tree into more friendly abstract
  * syntax tree (AST). The return type <T> is AST, see AST.java
  */
-
+/*
 class ASTMaker extends AbstractParseTreeVisitor<AST>
                implements implVisitor<AST> {
     public AST visitStart(implParser.StartContext ctx){
@@ -117,3 +117,6 @@ class ASTMaker extends AbstractParseTreeVisitor<AST>
     };
 }
 
+
+
+ */

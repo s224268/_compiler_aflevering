@@ -16,8 +16,8 @@ all:
 implLexer.java:	impl.g4
 	$(antlr4) -visitor impl.g4
 
-main.class:	implLexer.java main.java AST.java Environment.java
-	javac $(classpathoption) $(GENERATED) main.java AST.java Environment.java
+main.class:	implLexer.java main.java
+	javac $(classpathoption) $(GENERATED) main.java
 
 run:	main.class
 	java $(classpathoption) main simple.impl
