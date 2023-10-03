@@ -72,7 +72,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 */
 	public String visitProg(implParser.ProgContext ctx){
 
-		return ("<html><head><title> PLACEHOLDER TITLE [REPLACE THIS] </title>\n" +
+		return ("<html><head><title> " +  + "</title>\n" +
 				"<script src=\"https://polyfill.io/v3/polyfill.min.js?features=es6\"></script>\n" +
 				"<script type=\"text/javascript\" id=\"MathJax-script\"\n" +
 				"async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\">\n" +
