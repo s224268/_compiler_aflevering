@@ -1,12 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" name="Changes" comment="">
+    <list default="true" id="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" name="Changes" comment="DET stadig VORES HUS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/cc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/antlr-4.13.0-complete.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/impl.g4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/impl.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/impl.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implBaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implLexer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$AddContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$ConstContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$ExpContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$MultContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$ParenContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$StartContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser$VarContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/implVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/impl-after-lecture/simple.impl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_compiler_aflevering.iml" beforeDir="false" afterPath="$PROJECT_DIR$/_compiler_aflevering.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/antlr-4.13.0-complete.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/antlr-4.13.0-complete.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/antlr4_parse_tree.png" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/antlr4_parse_tree.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cc.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/cc.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cc.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/cc.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cc.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/cc.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/cc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$ExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$InputsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$InputsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$LatchContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$LatchContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$LatchesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$LatchesContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$OutputsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$OutputsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$ProgContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$ProgContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$SimulateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$SimulateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$SkippableContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$SkippableContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$StartContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$StmnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$StmnContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser$UpdateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser$UpdateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ccParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src_old/ccParser.java" afterDir="false" />
     </list>
-    <list id="d9448069-1864-4c43-afb1-1889ec38b55d" name="Changes by ansi1" comment="" />
     <list id="0badfd93-994d-46c3-9195-44df1184494a" name="Changes by Toni" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +80,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,8 +99,24 @@
       <option name="presentableId" value="Default" />
       <updated>1695551899399</updated>
       <workItem from="1695735095366" duration="193000" />
-      <workItem from="1695735346419" duration="4122000" />
+      <workItem from="1695735346419" duration="5265000" />
+      <workItem from="1696339697485" duration="1190000" />
     </task>
+    <task id="LOCAL-00001" summary="DET VORES HUS">
+      <created>1695739583296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695739583296</updated>
+    </task>
+    <task id="LOCAL-00002" summary="DET stadig VORES HUS">
+      <created>1695739832035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695739832035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,5 +132,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DET VORES HUS" />
+    <MESSAGE value="DET stadig VORES HUS" />
+    <option name="LAST_COMMIT_MESSAGE" value="DET stadig VORES HUS" />
   </component>
 </project>

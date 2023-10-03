@@ -32,9 +32,9 @@ update : UPDATE stmn* simulate;
 simulate : SIMULATE IDENTIFIER '=' BINARY;
 
 IDENTIFIER : [a-zA-Z] [a-zA-Z0-9]*;
+
 COMMENT : '//' ~[\n]* -> skip;
 MULTICOMMENT : '/*' (~[*] | '*'~[/])* '*/' -> skip;
-
 WS : [ \n\t\r]+ -> skip;
 
 stmn : IDENTIFIER '=' exp;
@@ -43,4 +43,5 @@ exp : IDENTIFIER
     | '!' e=exp
     | e1=exp '&&' e2=exp
     | e1=exp '||' e2=exp
-    | '(' e=exp ')';
+    | '(' e=exp ')'
+    ;
