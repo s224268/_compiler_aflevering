@@ -129,7 +129,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	public String visitAnd(implParser.AndContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return "";
+		return visit(ctx.e1) + "&&" + visit(ctx.e2);
 	}
 
 
