@@ -49,6 +49,52 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	String visitStart(implParser.StartContext ctx){
 
 	}
+	
+	String visitSkippable(implParser.SkippableContext ctx){
+
+	}
+
+	String visitProg(implParser.ProgContext ctx){
+
+	}
+
+	String visitInputs(implParser.InputsContext ctx){
+
+	}
+
+	String visitOutputs(implParser.OutputsContext ctx){
+
+	}
+
+	String visitLatches(implParser.LatchesContext ctx){
+
+	}
+
+	String visitLatch(implParser.LatchContext ctx){
+
+	}
+
+	String visitUpdate(implParser.UpdateContext ctx){
+
+	}
+
+	String visitSimulate(implParser.SimulateContext ctx){
+
+	}
+
+	String visitStmn(implParser.StmnContext ctx){
+
+	}
+
+	String visitExp(implParser.ExpContext ctx){
+
+	}
+}
+
+class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
+	String visitStart(implParser.StartContext ctx){
+
+	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#skippable}.
 	 * @param ctx the parse tree
