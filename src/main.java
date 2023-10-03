@@ -45,51 +45,6 @@ public class main {
     }
 }
 
-class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
-	String visitStart(implParser.StartContext ctx){
-
-	}
-	
-	String visitSkippable(implParser.SkippableContext ctx){
-
-	}
-
-	String visitProg(implParser.ProgContext ctx){
-
-	}
-
-	String visitInputs(implParser.InputsContext ctx){
-
-	}
-
-	String visitOutputs(implParser.OutputsContext ctx){
-
-	}
-
-	String visitLatches(implParser.LatchesContext ctx){
-
-	}
-
-	String visitLatch(implParser.LatchContext ctx){
-
-	}
-
-	String visitUpdate(implParser.UpdateContext ctx){
-
-	}
-
-	String visitSimulate(implParser.SimulateContext ctx){
-
-	}
-
-	String visitStmn(implParser.StmnContext ctx){
-
-	}
-
-	String visitExp(implParser.ExpContext ctx){
-
-	}
-}
 
 class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
 	String visitStart(implParser.StartContext ctx){
@@ -135,25 +90,25 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	}
 
-	String visitUpdate(implParser.UpdateContext ctx){
-
+	public String visitUpdate(implParser.UpdateContext ctx){
+		return "";
 	}
 	public String visitIdent(implParser.IdentContext ctx){
 		return "";
 	}
 
 
-	String visitSimulate(implParser.SimulateContext ctx){
-
+	public String visitSimulate(implParser.SimulateContext ctx){
+		return "";
 	}
 
 
-	String visitStmn(implParser.StmnContext ctx){
-
+	public String visitStmn(implParser.StmnContext ctx){
+		return "";
 	}
 
-	String visitExp(implParser.ExpContext ctx){
-
+	public String visitExp(implParser.ExpContext ctx){
+		return "";
 	}
 	//abstract and does not override abstract method visitAnd(AndContext
 

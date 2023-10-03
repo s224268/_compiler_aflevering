@@ -39,9 +39,9 @@ WS : [ \n\t\r]+ -> skip;
 
 stmn : IDENTIFIER '=' exp;
 
-exp : i=IDENTIFIER           #identifier
-    | op='!' e=exp           #not
-    | e1=exp op='&&' e2=exp  #and
-    | e1=exp op='||' e2=exp  #or
-    | '(' e=exp ')'          #paren
+exp : i=IDENTIFIER           # Ident
+    | op='!' e=exp           # Not
+    | e1=exp op='&&' e2=exp  # And
+    | e1=exp op='||' e2=exp  # Or
+    | '(' e=exp ')'          # Paren
     ;
