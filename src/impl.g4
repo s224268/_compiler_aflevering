@@ -1,6 +1,6 @@
 grammar impl;
 
-start : (prog) EOF ;
+start : p=prog EOF ;
 
 OUTPUTS : '.outputs';
 
@@ -18,7 +18,7 @@ BINARY: [01]+;
 
 skippable : (WS | MULTICOMMENT | COMMENT)+;
 
-prog : HW ident=IDENTIFIER inputs;
+prog : HW ident=IDENTIFIER inp=inputs;
 
 inputs : in=INPUTS ident=IDENTIFIER+ outputs;
 

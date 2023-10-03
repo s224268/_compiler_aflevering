@@ -34,7 +34,8 @@ public class main {
 	
 	// and parse anything from the grammar for "start"
 	ParseTree parseTree = parser.start();
-
+	Interpreter interpreter = new Interpreter();
+	System.out.println(interpreter.visit(parseTree));
 	// Build the Abstract Syntax Tree (AST)
 	//ASTMaker astmaker = new ASTMaker();
 	//Program p=(Program)astmaker.visit(parseTree);
@@ -47,8 +48,9 @@ public class main {
 
 
 class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
-	String visitStart(implParser.StartContext ctx){
 
+	public String visitStart(implParser.StartContext ctx){
+		return visit(ctx.p);
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#skippable}.
@@ -74,20 +76,20 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	String visitInputs(implParser.InputsContext ctx){
-
+	public String visitInputs(implParser.InputsContext ctx){
+		return "";
 	}
 	
-	String visitOutputs(implParser.OutputsContext ctx){
-
+	public String visitOutputs(implParser.OutputsContext ctx){
+		return "";
 	}
 
-	String visitLatches(implParser.LatchesContext ctx){
-
+	public String visitLatches(implParser.LatchesContext ctx){
+		return "";
 	}
 
-	String visitLatch(implParser.LatchContext ctx){
-
+	public String visitLatch(implParser.LatchContext ctx){
+		return "";
 	}
 
 	public String visitUpdate(implParser.UpdateContext ctx){
