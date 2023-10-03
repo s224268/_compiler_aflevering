@@ -50,7 +50,7 @@ public class main {
 class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
 
 	public String visitStart(implParser.StartContext ctx){
-		return visit(ctx.p);
+		return ("<!DOCTYPE html>\n" + visit(ctx.p) + "</html>\n");
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#skippable}.
@@ -59,7 +59,8 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 */
 
 	public String visitSkippable(implParser.SkippableContext ctx){
-		return "";
+		System.out.println("Visiting skippable? [SUS DETECTED]");
+		return "LONG ";
 
 	}
 	/**
@@ -68,8 +69,12 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 	public String visitProg(implParser.ProgContext ctx){
-		//System.out.println(visit(ctx.ident));
-		return (visit(ctx.inp));
+
+		return ("<html><head><title> PLACEHOLDER TITLE [REPLACE THIS] </title>\n" +
+				"<script src=\"https://polyfill.io/v3/polyfill.min.js?features=es6\"></script>\n" +
+				"<script type=\"text/javascript\" id=\"MathJax-script\"\n" +
+				"async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\">\n" +
+				"</script></head><body>\n");
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#inputs}.
@@ -77,11 +82,11 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 	public String visitInputs(implParser.InputsContext ctx){
-		return "";
+		return "OF";
 	}
 	
 	public String visitOutputs(implParser.OutputsContext ctx){
-		return "";
+		return "CHARS";
 	}
 
 	public String visitLatches(implParser.LatchesContext ctx){
