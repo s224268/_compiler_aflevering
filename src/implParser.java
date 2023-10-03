@@ -98,6 +98,7 @@ public class implParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class StartContext extends ParserRuleContext {
+		public ProgContext p;
 		public TerminalNode EOF() { return getToken(implParser.EOF, 0); }
 		public ProgContext prog() {
 			return getRuleContext(ProgContext.class,0);
@@ -127,10 +128,8 @@ public class implParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			{
 			setState(22);
-			prog();
-			}
+			((StartContext)_localctx).p = prog();
 			setState(23);
 			match(EOF);
 			}
@@ -224,11 +223,12 @@ public class implParser extends Parser {
 	@SuppressWarnings("CheckReturnValue")
 	public static class ProgContext extends ParserRuleContext {
 		public Token ident;
+		public InputsContext inp;
 		public TerminalNode HW() { return getToken(implParser.HW, 0); }
+		public TerminalNode IDENTIFIER() { return getToken(implParser.IDENTIFIER, 0); }
 		public InputsContext inputs() {
 			return getRuleContext(InputsContext.class,0);
 		}
-		public TerminalNode IDENTIFIER() { return getToken(implParser.IDENTIFIER, 0); }
 		public ProgContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -259,7 +259,7 @@ public class implParser extends Parser {
 			setState(31);
 			((ProgContext)_localctx).ident = match(IDENTIFIER);
 			setState(32);
-			inputs();
+			((ProgContext)_localctx).inp = inputs();
 			}
 		}
 		catch (RecognitionException re) {
@@ -704,31 +704,127 @@ public class implParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ExpContext extends ParserRuleContext {
-		public ExpContext e1;
+		public ExpContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_exp; }
+	 
+		public ExpContext() { }
+		public void copyFrom(ExpContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	@SuppressWarnings("CheckReturnValue")
+	public static class NotContext extends ExpContext {
+		public Token op;
 		public ExpContext e;
-		public ExpContext e2;
+		public ExpContext exp() {
+			return getRuleContext(ExpContext.class,0);
+		}
+		public NotContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).enterNot(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).exitNot(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitNot(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	@SuppressWarnings("CheckReturnValue")
+	public static class IdentContext extends ExpContext {
+		public Token i;
 		public TerminalNode IDENTIFIER() { return getToken(implParser.IDENTIFIER, 0); }
+		public IdentContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).enterIdent(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).exitIdent(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitIdent(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	@SuppressWarnings("CheckReturnValue")
+	public static class OrContext extends ExpContext {
+		public ExpContext e1;
+		public Token op;
+		public ExpContext e2;
 		public List<ExpContext> exp() {
 			return getRuleContexts(ExpContext.class);
 		}
 		public ExpContext exp(int i) {
 			return getRuleContext(ExpContext.class,i);
 		}
-		public ExpContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_exp; }
+		public OrContext(ExpContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof implListener ) ((implListener)listener).enterExp(this);
+			if ( listener instanceof implListener ) ((implListener)listener).enterOr(this);
 		}
 		@Override
 		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof implListener ) ((implListener)listener).exitExp(this);
+			if ( listener instanceof implListener ) ((implListener)listener).exitOr(this);
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitExp(this);
+			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitOr(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	@SuppressWarnings("CheckReturnValue")
+	public static class AndContext extends ExpContext {
+		public ExpContext e1;
+		public Token op;
+		public ExpContext e2;
+		public List<ExpContext> exp() {
+			return getRuleContexts(ExpContext.class);
+		}
+		public ExpContext exp(int i) {
+			return getRuleContext(ExpContext.class,i);
+		}
+		public AndContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).enterAnd(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).exitAnd(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitAnd(this);
+			else return visitor.visitChildren(this);
+		}
+	}
+	@SuppressWarnings("CheckReturnValue")
+	public static class ParenContext extends ExpContext {
+		public ExpContext e;
+		public ExpContext exp() {
+			return getRuleContext(ExpContext.class,0);
+		}
+		public ParenContext(ExpContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).enterParen(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof implListener ) ((implListener)listener).exitParen(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof implVisitor ) return ((implVisitor<? extends T>)visitor).visitParen(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -753,24 +849,34 @@ public class implParser extends Parser {
 			switch (_input.LA(1)) {
 			case IDENTIFIER:
 				{
+				_localctx = new IdentContext(_localctx);
+				_ctx = _localctx;
+				_prevctx = _localctx;
+
 				setState(82);
-				match(IDENTIFIER);
+				((IdentContext)_localctx).i = match(IDENTIFIER);
 				}
 				break;
 			case T__2:
 				{
+				_localctx = new NotContext(_localctx);
+				_ctx = _localctx;
+				_prevctx = _localctx;
 				setState(83);
-				match(T__2);
+				((NotContext)_localctx).op = match(T__2);
 				setState(84);
-				((ExpContext)_localctx).e = exp(4);
+				((NotContext)_localctx).e = exp(4);
 				}
 				break;
 			case T__5:
 				{
+				_localctx = new ParenContext(_localctx);
+				_ctx = _localctx;
+				_prevctx = _localctx;
 				setState(85);
 				match(T__5);
 				setState(86);
-				((ExpContext)_localctx).e = exp(0);
+				((ParenContext)_localctx).e = exp(0);
 				setState(87);
 				match(T__6);
 				}
@@ -792,28 +898,28 @@ public class implParser extends Parser {
 					switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
 					case 1:
 						{
-						_localctx = new ExpContext(_parentctx, _parentState);
-						_localctx.e1 = _prevctx;
+						_localctx = new AndContext(new ExpContext(_parentctx, _parentState));
+						((AndContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_exp);
 						setState(91);
 						if (!(precpred(_ctx, 3))) throw new FailedPredicateException(this, "precpred(_ctx, 3)");
 						setState(92);
-						match(T__3);
+						((AndContext)_localctx).op = match(T__3);
 						setState(93);
-						((ExpContext)_localctx).e2 = exp(4);
+						((AndContext)_localctx).e2 = exp(4);
 						}
 						break;
 					case 2:
 						{
-						_localctx = new ExpContext(_parentctx, _parentState);
-						_localctx.e1 = _prevctx;
+						_localctx = new OrContext(new ExpContext(_parentctx, _parentState));
+						((OrContext)_localctx).e1 = _prevctx;
 						pushNewRecursionContext(_localctx, _startState, RULE_exp);
 						setState(94);
 						if (!(precpred(_ctx, 2))) throw new FailedPredicateException(this, "precpred(_ctx, 2)");
 						setState(95);
-						match(T__4);
+						((OrContext)_localctx).op = match(T__4);
 						setState(96);
-						((ExpContext)_localctx).e2 = exp(3);
+						((OrContext)_localctx).e2 = exp(3);
 						}
 						break;
 					}

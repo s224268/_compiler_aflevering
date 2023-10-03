@@ -100,7 +100,9 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	String visitSkippable(implParser.SkippableContext ctx){
+
+	public String visitSkippable(implParser.SkippableContext ctx){
+		return "";
 
 	}
 	/**
@@ -108,8 +110,9 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	String visitProg(implParser.ProgContext ctx){
-
+	public String visitProg(implParser.ProgContext ctx){
+		//System.out.println(visit(ctx.ident));
+		return (visit(ctx.inp));
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#inputs}.
@@ -135,10 +138,15 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	String visitUpdate(implParser.UpdateContext ctx){
 
 	}
+	public String visitIdent(implParser.IdentContext ctx){
+		return "";
+	}
+
 
 	String visitSimulate(implParser.SimulateContext ctx){
 
 	}
+
 
 	String visitStmn(implParser.StmnContext ctx){
 
@@ -147,6 +155,32 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	String visitExp(implParser.ExpContext ctx){
 
 	}
+	//abstract and does not override abstract method visitAnd(AndContext
+
+	public String visitOr(implParser.OrContext ctx){
+		//System.out.println(ctx.e1 + ctx.e2);
+		return "";
+	}
+
+
+	public String visitAnd(implParser.AndContext ctx){
+		//System.out.println(ctx.e1 + ctx.e2);
+		return "";
+	}
+
+
+	public String visitParen(implParser.ParenContext ctx){
+		//System.out.println(ctx.e1 + ctx.e2);
+		return "";
+	}
+
+	public String visitNot(implParser.NotContext ctx){
+		//System.out.println(ctx.e1 + ctx.e2);
+		return "";
+	}
+
+
+
 }
 
 /* Visitor that turns the ANTLR parse tree into more friendly abstract

@@ -107,13 +107,63 @@ public interface implListener extends ParseTreeListener {
 	 */
 	void exitStmn(implParser.StmnContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link implParser#exp}.
+	 * Enter a parse tree produced by the {@code Not}
+	 * labeled alternative in {@link implParser#exp}.
 	 * @param ctx the parse tree
 	 */
-	void enterExp(implParser.ExpContext ctx);
+	void enterNot(implParser.NotContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link implParser#exp}.
+	 * Exit a parse tree produced by the {@code Not}
+	 * labeled alternative in {@link implParser#exp}.
 	 * @param ctx the parse tree
 	 */
-	void exitExp(implParser.ExpContext ctx);
+	void exitNot(implParser.NotContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Ident}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterIdent(implParser.IdentContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Ident}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitIdent(implParser.IdentContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Or}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterOr(implParser.OrContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Or}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitOr(implParser.OrContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code And}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterAnd(implParser.AndContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code And}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitAnd(implParser.AndContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Paren}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterParen(implParser.ParenContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Paren}
+	 * labeled alternative in {@link implParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitParen(implParser.ParenContext ctx);
 }
