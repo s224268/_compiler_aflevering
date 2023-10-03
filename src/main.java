@@ -45,6 +45,64 @@ public class main {
     }
 }
 
+class Interpreter extends AbstractParseTreeVisitor<String> implements implVisitor<String>{
+	String visitStart(implParser.StartContext ctx){
+
+	}
+	/**
+	 * Visit a parse tree produced by {@link implParser#skippable}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	String visitSkippable(implParser.SkippableContext ctx){
+
+	}
+	/**
+	 * Visit a parse tree produced by {@link implParser#prog}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	String visitProg(implParser.ProgContext ctx){
+
+	}
+	/**
+	 * Visit a parse tree produced by {@link implParser#inputs}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	String visitInputs(implParser.InputsContext ctx){
+
+	}
+	
+	String visitOutputs(implParser.OutputsContext ctx){
+
+	}
+
+	String visitLatches(implParser.LatchesContext ctx){
+
+	}
+
+	String visitLatch(implParser.LatchContext ctx){
+
+	}
+
+	String visitUpdate(implParser.UpdateContext ctx){
+
+	}
+
+	String visitSimulate(implParser.SimulateContext ctx){
+
+	}
+
+	String visitStmn(implParser.StmnContext ctx){
+
+	}
+
+	String visitExp(implParser.ExpContext ctx){
+
+	}
+}
+
 /* Visitor that turns the ANTLR parse tree into more friendly abstract
  * syntax tree (AST). The return type <T> is AST, see AST.java
  */
