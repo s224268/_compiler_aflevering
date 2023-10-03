@@ -40,6 +40,12 @@ public interface implVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitOutputs(implParser.OutputsContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link implParser#output}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOutput(implParser.OutputContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link implParser#latches}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

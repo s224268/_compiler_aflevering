@@ -18,13 +18,15 @@ BINARY: [01]+;
 
 skippable : (WS | MULTICOMMENT | COMMENT)+;
 
-prog : HW ident=IDENTIFIER inp=inputs;
+prog : HW ident=IDENTIFIER next=inputs;
 
-inputs : in=INPUTS ident=IDENTIFIER+ outputs;
+//in=INPUTS may be unnecessary
+inputs : in=INPUTS ident=IDENTIFIER+ next=outputs;
 
-outputs : out=OUTPUTS ident=IDENTIFIER+ latches;
+outputs : out=OUTPUTS put=output+ next=latches;
+output  : ident=IDENTIFIER;
 
-latches : LATCHES latch* update;
+latches : LATCHES latch* next=update;
 latch : ident1=IDENTIFIER '->' ident2=IDENTIFIER;
 
 update : UPDATE stmn* simulate;
