@@ -83,13 +83,26 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 	public String visitInputs(implParser.InputsContext ctx){
-		return ("<h2> Inputs </h2>\nReset\n\n" + visit(ctx.next));
+		return ("<h2> Inputs </h2>\nReset\n" + ctx.ident.getText() + "\n\n" + visit(ctx.next));
 	}
-	
+
 	public String visitOutputs(implParser.OutputsContext ctx){
-		return ("<h2> Outputs </h2>\n" + visitChildren(ctx)
-		);
+		StringBuilder output = new StringBuilder("<h2> Outputs </h2>\n");
+
+		int childCount = ctx.getChildCount();
+		output.append("\n\n").append(childCount).append("\n\n");
+
+		for (int i = 0; i < childCount; i++) {
+			ParseTree child = ctx.getChild(i);
+			output.append(child.getText()).append("\n");
+		}
+
+		// If you still want to visit children (though you've already looped through them above)
+		output.append(visitChildren(ctx));
+
+		return output.toString();
 	}
+
 	public String visitOutput(implParser.OutputContext ctx){
 		System.out.println("VISITING OUTPUT");
 		return (ctx.ident.getText() + "\n b");
