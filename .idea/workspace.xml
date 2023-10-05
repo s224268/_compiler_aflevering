@@ -5,9 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" name="Changes" comment="Added the files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/impl.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/impl.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$AndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$AndContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$ExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$IdentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$IdentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$LatchContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$LatchContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$LatchesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$LatchesContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$NotContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$NotContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$OrContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$OrContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$OutputsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$OutputsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$ParenContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$ParenContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$SimulateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$SimulateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$StmnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$StmnContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$UpdateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$UpdateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simple.impl" beforeDir="false" afterPath="$PROJECT_DIR$/src/simple.impl" afterDir="false" />
+    </list>
+    <list id="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" name="Changes by banto" comment="">
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
-    <list id="0badfd93-994d-46c3-9195-44df1184494a" name="Changes by Toni" comment="" />
+    <list id="0badfd93-994d-46c3-9195-44df1184494a" name="Changes by Toni" comment="">
+      <change beforePath="$PROJECT_DIR$/src/impl.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/impl.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +48,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main.java">
+      <ranges>
+        <range start1="77" end1="78" start2="77" end2="78" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="90" end1="91" start2="90" end2="90" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="92" end1="93" start2="91" end2="91" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="94" end1="95" start2="92" end2="93" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="105" end1="109" start2="103" end2="103" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="111" end1="112" start2="105" end2="118" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="119" end1="120" start2="125" end2="131" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="121" end1="121" start2="132" end2="134" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="122" end1="123" start2="135" end2="136" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="132" end1="133" start2="145" end2="146" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="136" end1="137" start2="149" end2="150" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="142" end1="143" start2="155" end2="156" changelist="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" />
+        <range start1="148" end1="149" start2="161" end2="162" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="150" end1="152" start2="163" end2="163" changelist="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" />
+        <range start1="159" end1="160" start2="170" end2="171" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+      </ranges>
+    </file>
+  </component>
   <component name="Make.Settings">
     <option name="path" value="C:\cygwin64\bin\make.exe" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2Vq7kG7n77joM41M3yguYtZWLwp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,9 +93,12 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/cygwin64/bin/make.exe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.make",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -50,6 +109,18 @@
   <component name="RunManager" selected="Makefile Target.run">
     <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/src/Makefile" target="all" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="ccLexer.class" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/src_old/Makefile" target="ccLexer.class" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="grun (1)" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/src_old/Makefile" target="grun" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -69,8 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Makefile Target.run" />
-        <item itemvalue="Makefile Target.grun" />
         <item itemvalue="Makefile Target.all" />
+        <item itemvalue="Makefile Target.grun" />
+        <item itemvalue="Makefile Target.grun (1)" />
+        <item itemvalue="Makefile Target.ccLexer.class" />
       </list>
     </recent_temporary>
   </component>
@@ -85,6 +158,7 @@
       <workItem from="1695735095366" duration="193000" />
       <workItem from="1695735346419" duration="5265000" />
       <workItem from="1696339697485" duration="1575000" />
+      <workItem from="1696511941065" duration="6148000" />
     </task>
     <task id="LOCAL-00001" summary="DET VORES HUS">
       <created>1695739583296</created>
@@ -114,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696341117863</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added the files">
+      <option name="closed" value="true" />
+      <created>1696511962122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696511962122</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added the files">
+      <option name="closed" value="true" />
+      <created>1696511982518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696511982518</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

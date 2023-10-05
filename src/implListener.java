@@ -57,16 +57,6 @@ public interface implListener extends ParseTreeListener {
 	 */
 	void exitOutputs(implParser.OutputsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link implParser#output}.
-	 * @param ctx the parse tree
-	 */
-	void enterOutput(implParser.OutputContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link implParser#output}.
-	 * @param ctx the parse tree
-	 */
-	void exitOutput(implParser.OutputContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link implParser#latches}.
 	 * @param ctx the parse tree
 	 */

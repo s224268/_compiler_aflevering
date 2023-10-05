@@ -11,7 +11,7 @@ Yel -> YelM
 Req -> ReqM
 
 .update
-Clr = RedM && !YelM
+
 Req = (ReqM || Button) && !Clr
 Red = !RedM && YelM || RedM && !YelM
 Yel = !RedM && !YelM && Req || RedM && !YelM
