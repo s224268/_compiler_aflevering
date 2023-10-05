@@ -23,13 +23,12 @@ prog : HW ident=IDENTIFIER next=inputs;
 //in=INPUTS may be unnecessary
 inputs : in=INPUTS ident=IDENTIFIER+ next=outputs;
 
-outputs : out=OUTPUTS put=output+ next=latches;
-output  : ident=IDENTIFIER;
+outputs : out=OUTPUTS put=IDENTIFIER+ next=latches;
 
 latches : LATCHES latch* next=update;
 latch : ident1=IDENTIFIER '->' ident2=IDENTIFIER;
 
-update : UPDATE stmn* simulate;
+update : UPDATE s=stmn* next=simulate;
 
 simulate : SIMULATE IDENTIFIER '=' BINARY;
 
@@ -39,7 +38,7 @@ COMMENT : '//' ~[\n]* -> skip;
 MULTICOMMENT : '/*' (~[*] | '*'~[/])* '*/' -> skip;
 WS : [ \n\t\r]+ -> skip;
 
-stmn : IDENTIFIER '=' exp;
+stmn : i=IDENTIFIER '=' e=exp;
 
 exp : i=IDENTIFIER           # Ident
     | op='!' e=exp           # Not

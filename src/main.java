@@ -75,7 +75,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 				"<script src=\"https://polyfill.io/v3/polyfill.min.js?features=es6\"></script>\n" +
 				"<script type=\"text/javascript\" id=\"MathJax-script\"\n" +
 				"async src=\"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js\">\n" +
-				"</script></head><body>\n <h1>"+ ctx.ident.getText() + "</h1>\n" + visit(ctx.next));
+				"</script></head><body>\n <h1>"+ ctx.ident.getText() + "</h1>\n" + visit(ctx.next) + "</body>");
 	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#inputs}.
@@ -101,13 +101,21 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 		return output.toString();
 	}
 
-	public String visitOutput(implParser.OutputContext ctx){
-		System.out.println("VISITING OUTPUT");
-		return (ctx.ident.getText() + "\n b");
-	}
 
 	public String visitLatches(implParser.LatchesContext ctx){
-		return "";
+
+		StringBuilder output = new StringBuilder("<h2> Latches </h2>\n");
+		int childCount = ctx.getChildCount();
+
+		for (int i = 1; i < childCount - 1; i++) {
+			ParseTree child = ctx.getChild(i);
+			output.append(child.getText()).append("<br>\n");
+		}
+
+		// If you still want to visit children (though you've already looped through them above)
+		String update = visit(ctx.next);
+		return (output.toString().replaceAll("->","&rarr;") + update);
+
 	}
 
 	public String visitLatch(implParser.LatchContext ctx){
@@ -125,7 +133,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 
 	public String visitIdent(implParser.IdentContext ctx){
-		return "";
+		return ("\\mathrm{" + ctx.i.getText() + "}");
 	}
 
 
@@ -135,11 +143,11 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 
 	public String visitStmn(implParser.StmnContext ctx){
-		return "";
+		return (("\\(\\mathrm{" + ctx.i.getText() + "}") + "&larr;" + visit(ctx.e) + "\\)" + "<br>");
 	}
 
 	public String visitExp(implParser.ExpContext ctx){
-		return "";
+		return visit(ctx);
 	}
 	//abstract and does not override abstract method visitAnd(AndContext
 
@@ -151,7 +159,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	public String visitAnd(implParser.AndContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return visit(ctx.e1) + "&&" + visit(ctx.e2);
+		return ("(" + visit(ctx.e1) + "\\wedge" + visit(ctx.e2) + ")");
 	}
 
 
@@ -162,7 +170,7 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 	public String visitNot(implParser.NotContext ctx){
 		//System.out.println(ctx.e1 + ctx.e2);
-		return "\\neg" + visit(ctx.e);
+		return ("\\neg(" + visit(ctx.e) + ")");
 	}
 
 
