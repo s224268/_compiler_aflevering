@@ -16,8 +16,6 @@ SIMULATE : '.simulate';
 
 BINARY: [01]+;
 
-skippable : (WS | MULTICOMMENT | COMMENT)+;
-
 prog : HW ident=IDENTIFIER next=inputs;
 
 //in=INPUTS may be unnecessary
