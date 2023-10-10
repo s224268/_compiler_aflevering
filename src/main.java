@@ -5,6 +5,9 @@ import org.antlr.v4.runtime.CharStreams;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class main {
     public static void main(String[] args) throws IOException{
@@ -36,6 +39,7 @@ public class main {
 	ParseTree parseTree = parser.start();
 	Interpreter interpreter = new Interpreter();
 	String result = interpreter.visit(parseTree);
+	toFile(result);
 	System.out.println(result);
 
 	// Build the Abstract Syntax Tree (AST)
@@ -46,6 +50,20 @@ public class main {
 	//Environment env=new Environment();
 	//p.eval(env);
     }
+
+	public static void toFile(String data) {
+		String filename = "output.html";
+
+		try (FileWriter fw = new FileWriter(filename);
+			 BufferedWriter bw = new BufferedWriter(fw)) {
+
+			bw.write(data);
+			System.out.println("Data written to file successfully.");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
 
 
@@ -138,7 +156,9 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 
 
 	public String visitSimulate(implParser.SimulateContext ctx){
-		return "";
+		StringBuilder output = new StringBuilder("<h2> Simulation inputs </h2>\n\n");
+		output.append("<b>" + ctx.i.getText() + "</b>: " + ctx.b.getText());
+		return output.toString();
 	}
 
 

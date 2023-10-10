@@ -16,12 +16,6 @@ public interface implVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStart(implParser.StartContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link implParser#skippable}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSkippable(implParser.SkippableContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link implParser#prog}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

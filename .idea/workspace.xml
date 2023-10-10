@@ -12,29 +12,37 @@
       <change beforePath="$PROJECT_DIR$/src/implBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/implLexer.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$AndContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$AndContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$ExpContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$IdentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$IdentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$InputsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$InputsContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$LatchContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$LatchContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$LatchesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$LatchesContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$NotContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$NotContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$OrContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$OrContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$OutputsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$OutputsContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$ParenContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$ParenContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$ProgContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$ProgContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$SimulateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$SimulateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/implParser$StartContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$StartContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$StmnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$StmnContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser$UpdateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser$UpdateContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/implVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/implVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/implVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/simple.impl" beforeDir="false" afterPath="$PROJECT_DIR$/src/simple.impl" afterDir="false" />
+    </list>
+    <list id="34f9c82a-0b12-48bc-9989-1748aa7b94e3" name="Changes by ansi1" comment="">
+      <change beforePath="$PROJECT_DIR$/src/impl.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/impl.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <list id="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" name="Changes by banto" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simple.impl" beforeDir="false" afterPath="$PROJECT_DIR$/src/simple.impl" afterDir="false" />
     </list>
     <list id="0badfd93-994d-46c3-9195-44df1184494a" name="Changes by Toni" comment="">
       <change beforePath="$PROJECT_DIR$/src/impl.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/impl.g4" afterDir="false" />
@@ -47,25 +55,26 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/impl.g4">
+      <ranges>
+        <range start1="17" end1="19" start2="17" end2="17" changelist="34f9c82a-0b12-48bc-9989-1748aa7b94e3" />
+        <range start1="32" end1="33" start2="30" end2="31" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+      </ranges>
+    </file>
     <file path="$PROJECT_DIR$/src/main.java">
       <ranges>
-        <range start1="77" end1="78" start2="77" end2="78" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="90" end1="91" start2="90" end2="90" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
-        <range start1="92" end1="93" start2="91" end2="91" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
-        <range start1="94" end1="95" start2="92" end2="93" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
-        <range start1="105" end1="109" start2="103" end2="103" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="111" end1="112" start2="105" end2="118" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="119" end1="120" start2="125" end2="131" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
-        <range start1="121" end1="121" start2="132" end2="134" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
-        <range start1="122" end1="123" start2="135" end2="136" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="132" end1="133" start2="145" end2="146" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="136" end1="137" start2="149" end2="150" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="142" end1="143" start2="155" end2="156" changelist="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" />
-        <range start1="148" end1="149" start2="161" end2="162" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
-        <range start1="150" end1="152" start2="163" end2="163" changelist="0f5b830e-3d5f-4f61-8aa6-deb9cb005024" />
-        <range start1="159" end1="160" start2="170" end2="171" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="7" end1="7" start2="7" end2="10" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="38" end1="38" start2="41" end2="42" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="48" end1="48" start2="52" end2="66" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="62" end1="67" start2="80" end2="80" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="128" end1="129" start2="141" end2="142" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="130" end1="131" start2="143" end2="144" changelist="0badfd93-994d-46c3-9195-44df1184494a" />
+        <range start1="140" end1="141" start2="153" end2="156" changelist="10c0ed7e-d7e4-4d09-8d4f-5f6735c8ab0c" />
+        <range start1="173" end1="175" start2="188" end2="188" changelist="34f9c82a-0b12-48bc-9989-1748aa7b94e3" />
+        <range start1="176" end1="252" start2="189" end2="189" changelist="34f9c82a-0b12-48bc-9989-1748aa7b94e3" />
       </ranges>
     </file>
   </component>
@@ -75,32 +84,32 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2Vq7kG7n77joM41M3yguYtZWLwp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/cygwin64/bin/make.exe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.make",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/cygwin64/bin/make.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.make&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\banto\IdeaProjects\_compiler_aflevering\src" />
@@ -140,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Makefile Target.run" />
-        <item itemvalue="Makefile Target.all" />
-        <item itemvalue="Makefile Target.grun" />
-        <item itemvalue="Makefile Target.grun (1)" />
         <item itemvalue="Makefile Target.ccLexer.class" />
+        <item itemvalue="Makefile Target.grun" />
+        <item itemvalue="Makefile Target.all" />
+        <item itemvalue="Makefile Target.grun (1)" />
       </list>
     </recent_temporary>
   </component>

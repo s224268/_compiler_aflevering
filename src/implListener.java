@@ -17,16 +17,6 @@ public interface implListener extends ParseTreeListener {
 	 */
 	void exitStart(implParser.StartContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link implParser#skippable}.
-	 * @param ctx the parse tree
-	 */
-	void enterSkippable(implParser.SkippableContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link implParser#skippable}.
-	 * @param ctx the parse tree
-	 */
-	void exitSkippable(implParser.SkippableContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link implParser#prog}.
 	 * @param ctx the parse tree
 	 */
