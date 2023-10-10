@@ -78,11 +78,6 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 	 * @return the visitor result
 	 */
 
-	public String visitSkippable(implParser.SkippableContext ctx){
-		System.out.println("Visiting skippable? [SUS DETECTED]");
-		return "LONG ";
-
-	}
 	/**
 	 * Visit a parse tree produced by {@link implParser#prog}.
 	 * @param ctx the parse tree
@@ -144,9 +139,9 @@ class Interpreter extends AbstractParseTreeVisitor<String> implements implVisito
 		StringBuilder output = new StringBuilder("<h2> Update </h2>\n");
 		int childCount = ctx.getChildCount();
 		for (int i = 1; i < childCount - 1; i++) {
-			output.append(visit(ctx.getChild(i))).append("\n");
+			output.append(visit(ctx.getChild(i))).append("\n\n");
 		}
-		return output.toString();
+		return output.append(visit(ctx.next)).toString();
 	}
 
 

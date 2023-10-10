@@ -28,7 +28,7 @@ latch : ident1=IDENTIFIER '->' ident2=IDENTIFIER;
 
 update : UPDATE s=stmn* next=simulate;
 
-simulate : SIMULATE IDENTIFIER '=' BINARY;
+simulate : SIMULATE i=IDENTIFIER '=' b=BINARY;
 
 IDENTIFIER : [a-zA-Z] [a-zA-Z0-9]*;
 
